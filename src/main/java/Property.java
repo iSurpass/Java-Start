@@ -14,6 +14,7 @@ public class Property {
 
     public int getVoucher() {
         return voucher;
+
     }
 
     public void setVoucher(int voucher) {
