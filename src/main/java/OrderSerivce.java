@@ -41,7 +41,7 @@ public class OrderSerivce {
         System.out.println("本次下单地址:"+address);
         System.out.println("-----------------");
         System.out.println("本次订单信息:");
-        for(OrderDishes dish: order.getDishes()){li
+        for(OrderDishes dish: order.getDishes()){
             System.out.println("商品名称:"+dish.getDishes().getName());
             System.out.println("商品数量:"+dish.getCount());
             System.out.println("商品价格:"+dish.getDishes().getPrice());
