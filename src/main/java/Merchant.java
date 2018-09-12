@@ -6,10 +6,19 @@ public class Merchant {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public int getDistance() {
+        return distance;
     }
 
+    public void setDistance(int distance) {
+        this.distance = distance;
+    }
+
+    public void setId(int id) {
+
+        this.id = id;
+    }
+    private int distance;
     private String name;
     private String address;
     private Dishes[] dishes;
