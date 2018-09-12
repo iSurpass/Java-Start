@@ -1,0 +1,22 @@
+[
+  {
+    "id":null,
+    "name":"麦当劳",
+    "distance":100
+  },
+  {
+    "id":2,
+    "name":"肯德基",
+    "distance":123
+  },
+  {
+    "id":3,
+    "name":"麦乐基",
+    "distance":1300
+  },
+  {
+    "id":4,
+    "name":"必胜客",
+    "distance":1030
+  }
+]
