@@ -5,18 +5,27 @@ import tech.bmatch.meituan.model.Merchant;
 import tech.bmatch.meituan.model.MerchantSearchParam;
 import tech.bmatch.meituan.service.MerchantService;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.List;
+
 import java.util.stream.Stream;
 
 public class Application {
 
+    private static final Logger logger = LoggerFactory.getLogger(Application.class);
+
     private static MerchantService merchantService = new MerchantServiceimpl();
 
     public static void main(String[] args) {
+
+        logger.info("应用启动");
+
         merchantService.init();
 
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
@@ -27,7 +36,7 @@ public class Application {
             try {
                 commend = bufferedReader.readLine();
             } catch (IOException e) {
-                e.printStackTrace();
+                logger.error("",e);
             }
 
             System.out.println("执行命令:"+commend);
