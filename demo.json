@@ -1,0 +1,21 @@
+{
+  "Name":"俊华",
+  "age":19,
+  "isMale":true,
+  "skils":[
+    "Python",
+    "Java"
+  ],
+  "school":[
+    {
+      "name":"浙江大学",
+      "startTime":"2018-3-20"
+    },
+    {
+      "name":"南京大学",
+      "startTime":"2018-9-5"
+    }
+  ]
+}
+
+//value: string,number,bool,object,array,null
